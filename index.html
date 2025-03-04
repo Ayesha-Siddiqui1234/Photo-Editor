@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="larger">
+        <h2>Easy Image Editor</h2>
+<div class="innerDiv">
+    <h6 id="fil">Filters</h6>
+        <button class="bt" id="Brighteness">Brightness</button>
+        <button class="bt" id="Saturation">Saturation</button>
+        <button class="bt" id="Inversion">Inversion</button>
+        <button class="bt" id="Gray">Gray scale</button>
+        <span id="bri">
+<p >Brighteness</p>
+<p style="margin-right: 20px;">100%</p>
+</span>
+<input type="range" min="0" max="199" id="slider" value="100" >
+<p id="rot">Rotate & Flip</p>
+
+    <button class="shift" id="leftRotate">↺</button>
+    <button class="shift" id="rightRotate">↻</button>
+    <button class="shift" id="flipHorizontally">⇄</button>
+    <button class="shift" id="flipVertically">⇅</button>
+
+    </div>
+    <img src="" alt="" id="imagePreview">  
+
+    <button id="resFil">RESET FILTERS</button>
+    <input type="file" id="imageInput" hidden>
+
+    <button class="choose" id="but1">CHOOSE IMAGE</button>
+    <!-- preview image means showing the image on the screen without editing -->
+    <button class="choose" id="but2">SAVE IMAGE</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
