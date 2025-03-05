@@ -9,14 +9,14 @@ choose.onclick=()=>{
     // files[0] means:
     // The first file selected by the user.
     // It will always select only one file at a time.
-    // if (file) { ... }
+    // if (file) 
     // This checks:
     // If the user has selected a file.
-    // If no file is selected, nothing will happen.
+    // If no file is selected, nothing will happen
     // let reader = new FileReader();
     // This creates a special object called FileReader.
-    // The job of FileReader is to read the file data (like images, text files, etc.).
-    // reader.onload = () => { ... }
+    // The job of FileReader is to read the file data like images, text files
+    // reader.onload = () =>
     // This means:
     // When the file is completely read by the FileReader, this function will run.
     // imagePreview.src = reader.result;
@@ -24,7 +24,7 @@ choose.onclick=()=>{
     // It sets the image's src attribute to display the uploaded image.
     // imagePreview.style.display = "block";
     // This makes the image visible on the screen.
-    // (Only if your image was hidden before with display: none in CSS.)
+    // Only if your image was hidden before with display
     // reader.readAsDataURL(file);
     // This line starts the reading process of the selected file.
     // It converts the image into a URL that can be shown on the website.
@@ -43,7 +43,7 @@ inpu.onchange=()=>{
 };
 
 const slid=document.getElementById("slider");
-slid.oninput=()=>{  //"When the user moves the slider (changes its value), run this function."
+slid.oninput=()=>{  //"When the user moves the slider changes its value run this function."
     let brightValue=slid.value;    //get the current number of the slider
     preview.style.filter=`brightness(${brightValue}%)`;   //it appky filter css on image like brightness 100% fullbrightness 50% dullbrightness if slider 200% high brightness
 }
@@ -104,6 +104,6 @@ document.getElementById("but2").onclick = () => {
         let link = document.createElement("a");
         link.download = "edited_image.png";
         link.href = canvas.toDataURL("image/png");  // Convert to PNG URL
-        link.click();  // Trigger download
+        link.click();  
     };
 };
